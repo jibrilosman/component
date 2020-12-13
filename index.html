@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>intro-component</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="introduce">
+                <h1>Learn to code by <br>watching others</h1>
+                <p>See how experienced developers solve problems in real-time. 
+                   Watching scripted tutorials is great, but understanding how 
+                   developers think is invaluable.</p>
+            </div>
+            <div class="form">
+                <div class="form-header"><b><a href="#">Try it free 7 days</a> </b><span> then $20/mo. thereafter</span></div><br>
+                <form name="myForm" method="POST" action="index.html">
+                    <div class="form-group">
+                        <label for="fname">
+                            <input type="text" name="name" placeholder="First Name" id="fname" value="">
+                        </label>
+                        <img src="icon-error.svg" alt="" id="error1" class="error">
+                         <small id="small-1"> first Name cannot be empty</small>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="lname">
+                            <input type="text" name="name" placeholder="Last Name" id="lname" value="">
+                        </label>
+                        <img src="icon-error.svg" alt="" id="error2" class="error">
+                         <small id="small-2">Last Name cannot be empty</small>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="email">
+                            <input type="email" name="email" placeholder="Email Address" id="email">
+                        </label>
+                        <img src="icon-error.svg" alt="" id="error3" class="error">
+                        <small id="small-3">Looks like this is not an email</small>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="pword">
+                            <input type="password" name="Password" placeholder="Password" id="password" value="">
+                        </label>
+                        <img src="images/icon-error.svg" alt="" id="error4" class="error">
+                        <small id="small-4">Password cannot be empty</small>
+                    </div><br><br>
+                    <div>
+                        <button class="btn-1" type="submit" name="claim" onclick= validation()>CLAIM YOUR FREE TRIAL</button>
+                    </div><br>
+                     
+                    <div class="footer">
+                        <span>By clicking the button, you are agreeing to our  </span><b><a href="#">Terms and Services</a></b>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
