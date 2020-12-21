@@ -9,48 +9,39 @@ function validation() {
     let emailInput = document.getElementById("email").value;
     let passwordInput = document.getElementById("password").value;
 
-    if(fnameInput === "") {
-        document.getElementById("error1").style.visibility = "visible";
-        document.getElementById("small-1").style.visibility = "visible";
-        document.getElementById("fname").style.border = "1px solid hsl(0, 100%, 74%) "
-    } else {
-        document.getElementById("error1").style.display = "none";
-        document.getElementById("small-1").style.display = "none";
-        document.getElementById("fname").style.border = "1px solid rgb(191, 191, 191)"
+    if(fnameInput == "") {
+        document.getElementById("error1").style.visibility = "visible"
+        document.getElementById("small-1").style.visibility = "visible"
     }
-    //
-
-    if(lnameInput === "") {
-        document.getElementById("error2").style.visibility = "visible";
-        document.getElementById("small-2").style.visibility ="visible";
-        document.getElementById("lname").style.border = "1px solid hsl(0, 100%, 74%) "
-    } else {
-        document.getElementById("error2").style.display = "inline-block";
-        document.getElementById("small-2").style.display = "inline-block";
-        document.getElementById("lname").style.border = "1px solid rgb(191, 191, 191)"
+    else {
+        document.getElementById("error1").style.visibility = "hidden"
+        document.getElementById("small-1").style.visibility = "hidden"
     }
 
-    //
+    if(lnameInput == "") {
+        document.getElementById("error2").style.visibility = "visible"
+        document.getElementById("small-2").style.visibility = "visible"
+    }
+    else {
+        document.getElementById("error2").style.visibility = "hidden"
+        document.getElementById("small-2").style.visibility = "hidden"
+    }
+
     if(validateEmail(emailInput)) {
-        document.getElementById("error3").style.display = "none";
-        document.getElementById("small-3").style.display = "none";
-        document.getElementById("email").style.border = "1px solid hsl(0, 100%, 74%)";
-        document.getElementById("email").style.border = "1px solid rgb(191, 191, 191)"
-    } else {
-        document.getElementById("error3").style.visibility = "visible";
-        document.getElementById("small-3").style.visibility = "visible";
-        document.getElementById("email").style.border = "1px solid hsl(0, 100%, 74%)"
+        document.getElementById("error3").style.visibility = "hidden"
+        document.getElementById("small-3").style.visibility = "hidden"
+    }
+    else {
+        document.getElementById("error3").style.visibility = "visible"
+        document.getElementById("small-3").style.visibility = "visible"
     }
 
-    //
-    if(passwordInput === "") {
-        document.getElementById("error4").style.visibility = "visible";
-        document.getElementById("small-4").style.visibility ="visible";
-        document.getElementById("password").style.border = "1px solid hsl(0, 100%, 74%) "
-    } else {
-        document.getElementById("error4").style.display = "none";
-        document.getElementById("small-4").style.display = "none";
-        document.getElementById("password").style.border = "1px solid rgb(191, 191, 191)"       
+    if(passwordInput == "") {
+        document.getElementById("error4").style.visibility = "visible"
+        document.getElementById("small-4").style.visibility = "visible"
     }
-
+    else {
+        document.getElementById("error4").style.visibility = "hidden"
+        document.getElementById("small-4").style.visibility = "hidden"
+    }
 }
